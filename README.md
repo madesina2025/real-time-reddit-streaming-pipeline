@@ -24,9 +24,10 @@ To run this project, ensure you have:
 
 ### Step 1 – Clone the repository
 
-```bash
+---
 git clone https://github.com/madesina2025/data-engineering-projects-portfolio.git
 cd data-engineering-projects-portfolio/real_time_retail_reddit
+---
 
 ## Step 2 – Start the Docker environment
 
@@ -47,18 +48,20 @@ docker compose up -d
 ## Step 3 – Configure Reddit API credentials
 
 Create a .env file in the project root:
-
+---
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
 REDDIT_USER_AGENT=
 REDDIT_USERNAME=
 REDDIT_PASSWORD=
 REDDIT_SUBREDDITS=retail,marketing,dataengineering
-
+---
 
 ## Step 4 – Start the Kafka Producer
 
+---
 python producer/load_to_consumer.py
+---
 
 This script connects to the Reddit API and sends messages to Kafka.
 
@@ -67,6 +70,7 @@ This script connects to the Reddit API and sends messages to Kafka.
 ---
 
 spark-submit consumer/spark_streaming.py
+---
 
 This script reads messages from Kafka, processes them, and writes formatted JSON records to MongoDB.
 
