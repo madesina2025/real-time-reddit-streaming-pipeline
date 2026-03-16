@@ -27,7 +27,7 @@ To run this project, ensure you have:
 
 ### Step 1 – Clone the repository
 
-```bash
+---
 git clone https://github.com/madesina2025/real-time-reddit-streaming-pipeline.git
 cd real-time-reddit-streaming-pipeline
 ---
@@ -41,7 +41,7 @@ This command will start the following services:
 - Spark
 - MongoDB
 
-```bash
+---
 docker compose up -d
 ---
 
@@ -62,7 +62,7 @@ REDDIT_SUBREDDITS=retail,marketing,dataengineering
 
 ```bash
 python producer/load_to_consumer.py
-
+---
 ### Step 5 – Start the Spark Streaming Consumer
 
 ```bash
@@ -78,7 +78,7 @@ real_time_retail_reddit/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Current file
 └── venv/                    # Local virtual environment (ignored in Git)
-
+---
 
 ## Database Schema Design
 
