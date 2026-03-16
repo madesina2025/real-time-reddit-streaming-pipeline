@@ -64,7 +64,7 @@ This script connects to the Reddit API and sends messages to Kafka.
 
 ## Step 5 – Start the Spark Streaming Consumer
 
-bash
+---
 
 spark-submit consumer/spark_streaming.py
 
@@ -75,7 +75,7 @@ Project structure
 
 From the project directory:
 
-
+---
 real_time_retail_reddit/
 │
 ├── compose.yml              # Docker services (Kafka, Spark, MongoDB)
@@ -86,7 +86,7 @@ real_time_retail_reddit/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Current file
 └── venv/                    # Local virtual environment (ignored in Git)
-
+---
 
 
 Database schema design
