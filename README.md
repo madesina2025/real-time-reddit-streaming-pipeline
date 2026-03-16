@@ -49,25 +49,26 @@ docker compose up -d
 
 Create a `.env` file in the project root and add the following variables:
 
-```env
+<pr>
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
 REDDIT_USER_AGENT=
 REDDIT_USERNAME=
 REDDIT_PASSWORD=
 REDDIT_SUBREDDITS=retail,marketing,dataengineering
----
+</pr>
 
 ### Step 4 – Start the Kafka Producer
 
-```bash
+---
 python producer/load_to_consumer.py
 ---
 ### Step 5 – Start the Spark Streaming Consumer
 
-```bash
+---
 spark-submit consumer/spark_streaming.py
 
+<pr>
 real_time_retail_reddit/
 │
 ├── compose.yml              # Docker services (Kafka, Spark, MongoDB)
@@ -78,7 +79,7 @@ real_time_retail_reddit/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Current file
 └── venv/                    # Local virtual environment (ignored in Git)
----
+<\pr>
 
 ## Database Schema Design
 
