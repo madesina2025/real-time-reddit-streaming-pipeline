@@ -30,7 +30,7 @@ To run this project, ensure you have:
 ```bash
 git clone https://github.com/madesina2025/real-time-reddit-streaming-pipeline.git
 cd real-time-reddit-streaming-pipeline
----
+
 
 ### Step 2 – Start the Docker Environment
 
@@ -56,7 +56,7 @@ REDDIT_USER_AGENT=
 REDDIT_USERNAME=
 REDDIT_PASSWORD=
 REDDIT_SUBREDDITS=retail,marketing,dataengineering
-'''
+
 
 ### Step 4 – Start the Kafka Producer
 
@@ -79,7 +79,7 @@ real_time_retail_reddit/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Current file
 └── venv/                    # Local virtual environment (ignored in Git)
-'''
+
 
 ## Database Schema Design
 
