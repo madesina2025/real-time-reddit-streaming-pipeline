@@ -30,7 +30,7 @@ To run this project, ensure you have:
 ```bash
 git clone https://github.com/madesina2025/real-time-reddit-streaming-pipeline.git
 cd real-time-reddit-streaming-pipeline
-
+'''
 
 ### Step 2 – Start the Docker Environment
 
@@ -68,7 +68,7 @@ python producer/load_to_consumer.py
 ---
 spark-submit consumer/spark_streaming.py
 
-'''
+'''text
 real_time_retail_reddit/
 │
 ├── compose.yml              # Docker services (Kafka, Spark, MongoDB)
