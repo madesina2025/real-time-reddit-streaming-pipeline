@@ -27,7 +27,7 @@ To run this project, ensure you have:
 
 ### Step 1 – Clone the repository
 
----
+```bash
 git clone https://github.com/madesina2025/real-time-reddit-streaming-pipeline.git
 cd real-time-reddit-streaming-pipeline
 ---
@@ -49,14 +49,14 @@ docker compose up -d
 
 Create a `.env` file in the project root and add the following variables:
 
-<pr>
+'''
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
 REDDIT_USER_AGENT=
 REDDIT_USERNAME=
 REDDIT_PASSWORD=
 REDDIT_SUBREDDITS=retail,marketing,dataengineering
-</pr>
+'''
 
 ### Step 4 – Start the Kafka Producer
 
@@ -68,7 +68,7 @@ python producer/load_to_consumer.py
 ---
 spark-submit consumer/spark_streaming.py
 
-<pr>
+'''
 real_time_retail_reddit/
 │
 ├── compose.yml              # Docker services (Kafka, Spark, MongoDB)
@@ -79,7 +79,7 @@ real_time_retail_reddit/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Current file
 └── venv/                    # Local virtual environment (ignored in Git)
-<\pr>
+'''
 
 ## Database Schema Design
 
