@@ -30,7 +30,7 @@ To run this project, ensure you have:
 ```bash
 git clone https://github.com/madesina2025/real-time-reddit-streaming-pipeline.git
 cd real-time-reddit-streaming-pipeline
-'''
+
 
 ### Step 2 – Start the Docker Environment
 
@@ -49,7 +49,7 @@ docker compose up -d
 
 Create a `.env` file in the project root and add the following variables:
 
-'''
+'''bash
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
 REDDIT_USER_AGENT=
