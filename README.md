@@ -47,9 +47,9 @@ docker compose up -d
 
 ### Step 3 – Configure Reddit API Credentials
 
-Create a `.env` file in the project root and add the following variables:
+Create a .env file in the project root and add the following variables:
 
-'''bash
+```bash
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
 REDDIT_USER_AGENT=
@@ -62,13 +62,13 @@ REDDIT_SUBREDDITS=retail,marketing,dataengineering
 
 ```bash
 python producer/load_to_consumer.py
-
 ```
 
 ### Step 5 – Start the Spark Streaming Consumer
 
----
+```bash
 spark-submit consumer/spark_streaming.py
+```
 
 ```text
 real_time_retail_reddit/
