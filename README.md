@@ -13,6 +13,12 @@ This project implements a real-time data streaming ETL pipeline that:
 - processes the data in real time using Apache Spark Structured Streaming
 - stores processed records in MongoDB for analytics
 
+### Architecture Diagram
+
+![RealTime Streaming Architecture Diagram](./assets/Realtime_kafka_pipeline.png)
+
+
+
 ## Project Goal
 
 The goal of this project is to provide immediate access to consumer sentiment, topic trends, and product-related discussions, enabling the retail analytics team to derive insights quickly 
